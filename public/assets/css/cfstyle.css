@@ -1,40 +1,59 @@
+  body {
+  background-color: #fff;
+}
+
 .baclogo {
+  display: block;
   margin: 0px;
   padding: 0px;
   background-color: #eee;
   grid-area: logo;
-  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, .1);
+
   max-width: 170px;
 }
 
 .baclogo img {
   display: block;
   width: auto;
-  height: 4em;
+  height: 8vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 .nava {
   display: flex;
+  background-color: #eee;
   margin: 0px;
   padding-left: 0px;
-  padding-right: auto;
-  background: #ddd;
+  padding-right: 0px;
   grid-area: navi;
   height: 40px;
+  justify-content: stretch;
+}
+
+.nava > * {
+  flex: 1 100%;
+}
+
+.dropdown {
+  flex: 0.1 1 170px;
+  display: grid;
+  grid-template-areas: "button" "drop";
+  grid-template-columns: auto;
+  grid-template-rows: 40px auto;
 }
 
 .dropbtn {
-  diplay: block;
+  display: block;
   background-color: #eee;
   color: black;
-  width: 170px;
-  height: 100%;
   border: none;
+  padding: 10px;
   font-size: 100%;
   grid-area: button;
   cursor: pointer;
+  width: auto;
+  height: 40px;
 }
 
 .dropbtn:hover,
@@ -42,36 +61,47 @@
   background-color: #ccc;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden
-}
+
 
 .dropdown-box {
   display: none;
-  position: absolute;
   z-index: 1;
   background-color: #eee;
-  width: 170px;
+  grid-area: drop;
 }
 
-.dropbtn:hover .dropdown-box{
+.dropdown:hover .dropdown-box {
   display: block;
 }
 
-.dropdown-box ul {
-  display: block;
+.droplist {
+  padding: 0px;
   margin: 0px;
+  text-align: center;
+}
+
+.droplist li {
+  display: flex;
+  font-size: .875em;
+  margin: 0px;
+  padding: 10px;
+}
+
+.droplist li:nth-child(odd) {
+  background-color: #ddd;
 }
 
 .sidebar {
+  display: block;
+  flex-direction: column;
   width: 170px;
   padding: 0px;
   background: #ddd;
   grid-area: list;
-  overflow-y: auto;
-  max-height: 92vmax;
+  overflow-y: scroll;
+  height: 92vh;
 }
+
 
 .sidebar p {
   margin: 0px;

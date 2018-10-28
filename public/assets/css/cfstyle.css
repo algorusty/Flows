@@ -1,0 +1,121 @@
+.baclogo {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eee;
+  grid-area: logo;
+  box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, .1);
+  max-width: 170px;
+}
+
+.baclogo img {
+  display: block;
+  width: auto;
+  height: 4em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nava {
+  display: flex;
+  margin: 0px;
+  padding-left: 0px;
+  padding-right: auto;
+  background: #ddd;
+  grid-area: navi;
+  height: 40px;
+}
+
+.dropbtn {
+  diplay: block;
+  background-color: #eee;
+  color: black;
+  width: 170px;
+  height: 100%;
+  border: none;
+  font-size: 100%;
+  grid-area: button;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #ccc;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden
+}
+
+.dropdown-box {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #eee;
+  width: 170px;
+}
+
+.dropbtn:hover .dropdown-box{
+  display: block;
+}
+
+.dropdown-box ul {
+  display: block;
+  margin: 0px;
+}
+
+.sidebar {
+  width: 170px;
+  padding: 0px;
+  background: #ddd;
+  grid-area: list;
+  overflow-y: auto;
+  max-height: 92vmax;
+}
+
+.sidebar p {
+  margin: 0px;
+  padding: 10px;
+  font-size: 1.1em;
+}
+
+.sidelist {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 0px;
+  background: #eee;
+  flex-direction: column;
+}
+
+.sidelist li {
+  display: block;
+  text-align: right;
+  font-size: .875em;
+  margin: 0px;
+  padding: 10px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.sidelist li:nth-child(even) {
+  background-color: #ddd;
+}
+
+.sidelist li:hover {
+  background: #ccc;
+}
+
+.grid-container {
+  display: grid;
+  margin: 0px;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "logo navi navi" "list article section";
+  font-family: Roboto, sans-serif;
+
+}
+
+.show {
+  display: block;
+}

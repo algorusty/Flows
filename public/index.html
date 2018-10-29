@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Wesley Soto">
   <link rel="stylesheet" type="text/css" href="assets/css/cfstyle.css">
-  <link rel="script" type="text/javascript" href="assets/js/cfindex.js">
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+  <script src="assets/js/cfindex.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
@@ -18,7 +19,7 @@
   </div>
   <nav class="nava">
     <div class="dropdown">
-      <button onclick="dropFunctionService()" class="dropbtn">
+      <button id="servicebtn" class="dropbtn">
             SERVICE
         </button>
       <div id="serviceDropdown" class="dropdown-box">
@@ -30,7 +31,7 @@
       </div>
     </div>
     <div class="dropdown">
-      <button onclick="dropFunctionTopic()" class="dropbtn">
+      <button id="topicbtn" onclick="dropFunctionTopic()" class="dropbtn">
           TOPIC
         </button>
       <div id="topicDropdown" class="dropdown-box">
@@ -75,5 +76,4 @@
     </div>
 
 </body>
-
 </html>

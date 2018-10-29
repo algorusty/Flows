@@ -15,7 +15,7 @@
 .baclogo img {
   display: block;
   width: auto;
-  height: 8vh;
+  max-height: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -27,20 +27,18 @@
   padding-left: 0px;
   padding-right: 0px;
   grid-area: navi;
+  grid-template-columns: auto auto;
   height: 40px;
-  justify-content: stretch;
 }
 
 .nava > * {
-  flex: 1 100%;
+  flex: .1 1 170px;
 }
 
 .dropdown {
-  flex: 0.1 1 170px;
-  display: grid;
-  grid-template-areas: "button" "drop";
-  grid-template-columns: auto;
-  grid-template-rows: 40px auto;
+  display: block;
+  grid-columns: auto;
+  grid-rows: 40px auto;
 }
 
 .dropbtn {
@@ -50,9 +48,10 @@
   border: none;
   padding: 10px;
   font-size: 100%;
-  grid-area: button;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  width: auto;
+  width: 100%;
   height: 40px;
 }
 
@@ -61,17 +60,11 @@
   background-color: #ccc;
 }
 
-
-
 .dropdown-box {
   display: none;
-  z-index: 1;
+  justify-self: center;
+  width: 100%;
   background-color: #eee;
-  grid-area: drop;
-}
-
-.dropdown:hover .dropdown-box {
-  display: block;
 }
 
 .droplist {
@@ -146,6 +139,4 @@
 
 }
 
-.show {
-  display: block;
-}
+

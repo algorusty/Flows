@@ -6,9 +6,14 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#servicebtn').on('change', function(){
         var optionText = $("#servicebtn option:selected").text();
-        var topicIndex = "'./assets/content/topiclist.txt #" + optionText +"'";
-        $("#topicbtn").load(topicIndex);
+        var topicIndex = "#" + optionText
         alert(topicIndex);
+        $.ajax({
+          url: "./assets/content/topiclist.txt",
+          context: topicIndex,
+         }).done(function() {
+         $("#topicbtn").replaceWith(this);
+      });
     });
 });
 

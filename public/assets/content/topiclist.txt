@@ -1,0 +1,27 @@
+<select id="Alpha" class="dropbtn">
+    <option>Alpha Alpha</option>
+    <option>Alpha Beta</option>
+    <option>Alpha Gamma</option>
+    <option>Alpha Epsilon</option>
+</select>
+
+<select id="Beta" class="dropbtn">
+    <option>Beta Alpha</option>
+    <option>Beta Beta</option>
+    <option>Beta Gamma</option>
+    <option>Beta Epsilon</option>
+</select>
+
+<select id="Gamma" class="dropbtn">
+    <option>Gamma Alpha</option>
+    <option>Gamma Beta</option>
+    <option>Gamma Gamma</option>
+    <option>Gamma Epsilon</option>
+</select>
+
+<select id="Epsilon" class="dropbtn">
+    <option>Epsilon Alpha</option>
+    <option>Epsilon Beta</option>
+    <option>Epsilon Gamma</option>
+    <option>Epsilon Epsilon</option>
+</select>

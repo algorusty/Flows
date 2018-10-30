@@ -78,10 +78,16 @@
   font-size: .875em;
   margin: 0px;
   padding: 10px;
+  cursor: pointer;
 }
+
 
 .droplist li:nth-child(odd) {
   background-color: #ddd;
+}
+
+.droplist li:hover {
+  background-color: #ccc;
 }
 
 .sidebar {

@@ -8,14 +8,14 @@
   padding: 0px;
   background-color: #eee;
   grid-area: logo;
-
   max-width: 170px;
+  max-height: 40px;
 }
 
 .baclogo img {
   display: block;
   width: auto;
-  max-height: 40px;
+  max-height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -48,7 +48,7 @@
   border: none;
   padding: 10px;
   font-size: 100%;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   cursor: pointer;
   width: 100%;
@@ -144,5 +144,3 @@
   font-family: Roboto, sans-serif;
 
 }
-
-

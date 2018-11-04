@@ -6,15 +6,19 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('#servicebtn').on('change', function(){
         var optionText = $("#servicebtn option:selected").text();
-        var topicIndex = "#" + optionText
+        var topicIndex = "./assets/content/topics/" + optionText + ".html";
         alert(topicIndex);
-        $.ajax({
-          url: "./assets/content/topiclist.txt",
-          context: topicIndex,
-         }).done(function() {
-         $("#topicbtn").replaceWith(this);
+        $("#topicbtn").load(topicIndex);
       });
     });
+
+$(document).ready(function(){
+  $("#topicbtn").on('change', function(){
+    var topicText = $("#topicbtn option:selected").text();
+    var listIndex = "./assets/content/sidelists/" + topicText + ".html";
+    alert(listIndex);
+    $("#sidelist").load(listIndex);
+  })
 });
 
 $(function(){

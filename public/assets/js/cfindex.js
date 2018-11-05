@@ -1,26 +1,42 @@
 
 $(document).ready(function(){
-  $("#servicebtn").load("./assets/content/servlist.html");
+  //load services list
+  $("#servicebtn").load("./assets/content/servlist.html", function(){
+    //load default topic
+    var optionText = $("#servicebtn option:selected").text();
+    var topicIndex = "./assets/content/topics/" + optionText + ".html";
+    $("#topicbtn").load(topicIndex, function(){
+      //load default side list
+      var topicText = $("#topicbtn option:selected").text();
+      var listIndex = './assets/content/sidelists/' + topicText.replace(/ +/g, "-") + '.html';
+      $("#side").load(listIndex);
+    });
+  });
 });
 
 $(document).ready(function(){
     $('#servicebtn').on('change', function(){
+      //service option change, load topic
         var optionText = $("#servicebtn option:selected").text();
         var topicIndex = "./assets/content/topics/" + optionText + ".html";
-        alert(topicIndex);
-        $("#topicbtn").load(topicIndex);
-      });
+        $("#topicbtn").load(topicIndex, function(){
+          //load default sidelist
+          var topicText = $("#topicbtn option:selected").text();
+          var listIndex = './assets/content/sidelists/' + topicText.replace(/ +/g, "-") + '.html';
+          $("#side").load(listIndex);
     });
-
-$(document).ready(function(){
-  $("#topicbtn").on('change', function(){
-    var topicText = $("#topicbtn option:selected").text();
-    var listIndex = "./assets/content/sidelists/" + topicText + ".html";
-    alert(listIndex);
-    $("#sidelist").load(listIndex);
-  })
+  });
 });
 
+$("document").ready(function(){
+  $("#topicbtn").on('change', function(){
+    // load sidelists
+    var topicText = $("#topicbtn option:selected").text();
+    var listIndex = "./assets/content/sidelists/" + topicText.replace(/ +/g, "-") + ".html";
+    $("#side").load(listIndex);
+  });
+});
+/*
 $(function(){
   $("#servicebtn").click(function(){
     $("#serviceDropdown").slideToggle(80);
@@ -32,8 +48,8 @@ $(function(){
     $("#topicDropdown").slideToggle(80);
 });
 });
-
-
+*/
+/*
 $(document).click(function (e) {
     e.stopPropagation();
     var container = $(".dropdown");
@@ -42,4 +58,5 @@ $(document).click(function (e) {
     if (container.has(e.target).length === 0) {
         $('.dropdown-box').slideUp(80);
     }
-})
+});
+*/

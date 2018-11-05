@@ -7,7 +7,7 @@ body {
   max-width        : 170px;
   max-height       : 50px;
   margin           : 0;
-  padding          : 1%;
+  padding          : 2%;
   background-color : #eee;
   grid-area        : logo;
 }

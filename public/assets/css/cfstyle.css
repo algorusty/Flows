@@ -5,24 +5,23 @@ body {
 .baclogo {
   display          : block;
   max-width        : 170px;
-  max-height       : 10vh;
-  margin           : 0px;
-  padding          : 0px;
+  max-height       : 50px;
+  margin           : 0;
+  padding          : 1%;
   background-color : #eee;
   grid-area        : logo;
 }
 
 .baclogo img {
-  display      : block;
-  width        : auto;
-  max-height   : 100%;
-  margin-right : auto;
-  margin-left  : auto;
+  display : block;
+  width   : auto;
+  height  : auto;
+  margin  : auto;
 }
 
 .nava {
   display               : flex;
-  height                : 10vh;
+  height                : 50px;
   margin                : 0px;
   padding-right         : 0px;
   padding-left          : 0px;
@@ -42,7 +41,7 @@ body {
 .dropbtn {
   display          : block;
   width            : 100%;
-  height           : 10vh;
+  height           : 100%;
   padding          : 10px;
   color            : black;
   border           : none;
@@ -87,12 +86,12 @@ body {
 .sidebar {
   display        : block;
   width          : 170px;
-  height         : 90vh;
   padding        : 0px;
   overflow-y     : scroll;
   background     : #ddd;
   flex-direction : column;
   grid-area      : list;
+  align-items: : flex-start;
 }
 
 .sidebar p {
@@ -134,7 +133,7 @@ body {
   font-family           : Roboto,
                           sans-serif;
   grid-template-columns : auto 1fr 1fr;
-  grid-template-rows    : 1fr auto;
+  grid-template-rows    : auto 1fr;
   grid-template-areas   : "logo navi navi"
                           "list article section";
 }

@@ -1,3 +1,8 @@
+var vHeight = $(window).height();
+    vWidth = $(window).width();
+
+$("body").css({"height":vHeight,"width":vWidth});
+
 
 $(document).ready(function(){
   //load services list
@@ -36,6 +41,9 @@ $("document").ready(function(){
     $("#side").load(listIndex);
   });
 });
+
+
+
 /*
 $(function(){
   $("#servicebtn").click(function(){

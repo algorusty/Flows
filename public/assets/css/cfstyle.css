@@ -91,7 +91,7 @@ body {
   background     : #ddd;
   flex-direction : column;
   grid-area      : list;
-  align-items: : flex-start;
+  align-items: flex-start;
 }
 
 .sidebar p {

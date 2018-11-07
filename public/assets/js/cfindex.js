@@ -24,18 +24,20 @@ var topicLoad = function(){
         $('#topicbtn').fadeOut(33.33, function(){
           $("#topicbtn").load(topicIndex, sideLoad);
         });
-  }
+  };
 
 $(document).ready(function(){
-  //load services list
+  //load services list on page ready
   $("#servicebtn").load("./assets/content/servlist.html", topicLoad);
 });
 
 $(document).ready(function(){
+  //load topic list on service option change
     $('#servicebtn').on('change', topicLoad);
   });
 
-$("document").ready(function(){
+$(document).ready(function(){
+  //load sidebar on topic option change
   $("#topicbtn").on('change', sideLoad);
 });
 

@@ -1,5 +1,6 @@
 body {
   background-color : #fff;
+  overflow: hidden;
 }
 
 .baclogo {
@@ -125,6 +126,19 @@ body {
 
 .sidelist li:hover {
   background : #ccc;
+}
+
+article {
+display: block;
+grid-area: article;
+overflow-y: auto;
+padding: 20px;
+}
+
+section {
+display: block;
+grid-area: section;
+overflow-y: 0;
 }
 
 .grid-container {

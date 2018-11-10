@@ -5,7 +5,7 @@ var vHeight = $(window).height();
 
 var rtime;
 var timeout = false;
-var delta = 200;
+var delta = 100;
 $(window).resize(function() {
   rtime = new Date();
   if (timeout === false) {
@@ -36,9 +36,9 @@ var sideLoad = function(){
       var topicText = $("#topicbtn option:selected").text().replace(/ +/g, "-");
       var listIndex = './assets/content/sidelists.html #' + topicText;
       //fade effect for sidebar
-      $('#side').fadeOut(33.33, function(){
-        $('#side').load(listIndex, function(){
-          $('#side').fadeIn(50);
+      $('#sidefade').fadeOut(33.33, function(){
+        $('#sidefade').load(listIndex, function(){
+          $('#sidefade').fadeIn(50);
         });
       });
 };

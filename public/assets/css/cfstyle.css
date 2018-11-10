@@ -131,14 +131,14 @@ body {
 article {
 display: block;
 grid-area: article;
-overflow-y: auto;
+overflow-y: scroll;
 padding: 20px;
 }
 
 section {
 display: block;
 grid-area: section;
-overflow-y: 0;
+overflow-y: scroll;
 }
 
 .grid-container {

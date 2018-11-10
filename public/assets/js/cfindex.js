@@ -45,7 +45,7 @@ var sideLoad = function(){
 
 var topicLoad = function(){
       //service option change, load topic
-      alert('works')
+
         var optionText = $("#servicebtn option:selected").text().replace(/ +/g, "-");
         var topicIndex = "./assets/content/topics.html #" + optionText;
         //fade effect for topics

@@ -1,5 +1,5 @@
 /* global $*/
-
+//Variables:
 var vHeight = $(window).height();
     vWidth = $(window).width();
 
@@ -61,9 +61,9 @@ $('.sidebar').on('click', 'li', function(){
   var liIndex = './assets/content/maincont.html #' + liText;
   $('#mainContent').load(liIndex);
 });
-
 };
 
+//Calls:
 $(mainLoad);
 
 $(document).ready(function(){

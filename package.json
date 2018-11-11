@@ -4,8 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "mocha": "5.0.0",
-    "unit.js": "2.0.0"
+    "mocha": "5.0.0"
   },
   "scripts": {
     "test": "mocha --recursive tests"
@@ -16,7 +15,12 @@
   },
   "dependencies": {
     "express": "^4.16.4",
-    "http-server": "^0.11.1"
+    "greenlock": "^2.4.10",
+    "greenlock-express": "^2.4.9",
+    "http-server": "^0.11.1",
+    "lodash": "^4.17.11",
+    "mime": "^2.3.1",
+    "nodemon": "^1.18.6"
   },
   "repository": {
     "type": "git",

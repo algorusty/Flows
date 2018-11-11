@@ -1,23 +1,10 @@
-'use strict';
 
-var http = require('http');
+const express = require('express');
+const port = 8080;
+const app = express();
 
-var server = http.createServer(function(req, res) {
-res.writeHead(200{});
-res.end('Hi everybody!');
+app.listen(port, function() {
+  console.log(`Server is running on port ${port}`)
 });
-server.listen(8080);
 
-var fs = require('fs');
-var path = require('path');
-
-exports.get = function(event, context, callback) {
-  var contents = fs.readFileSync(`public${path.sep}index.html`);
-  var result = {
-    statusCode: 200,
-    body: contents.toString(),
-    headers: {'content-type': 'text/html'}
-  };
-
-  callback(null, result);
-};
+app.use(express.static('public'));

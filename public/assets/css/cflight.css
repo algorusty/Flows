@@ -4,24 +4,6 @@ body {
   background-color : #fff;
 }
 
-body ::-webkit-scrollbar-track {
-  border-radius      : 1px;
-  background-color   : #F5F5F5;
-  -webkit-box-shadow : inset 0 0 10px rgba(0,0,0,0.1);
-}
-
-body ::-webkit-scrollbar {
-  width            : 6px;
-  background-color : #F5F5F5;
-  transform        : rotateX(180deg);
-}
-
-body ::-webkit-scrollbar-thumb {
-  border-radius      : 1px;
-  background-color   : #ccc;
-  -webkit-box-shadow : inset 0 0 20px rgba(0,0,0,.1);
-}
-
 ol li {
   padding : 4px;
 }
@@ -204,16 +186,42 @@ section {
 
 /* >>>Dark Mode<<< */
 
+.logodark img {
+  filter: brightness(1);
+}
+
 .dark1 {
   background-color: #222;
 }
 
 .dark2 {
   background-color: black;
+  color: #fff200;
 }
 
 .darkbtn {
   color: #fff200;
 }
 
-.darklist {}
+.darkbtn:hover,
+.darkbtn:focus {
+  background-color: #fff200;
+  color: black;
+}
+
+.darklist li {
+  background-color: #070707;
+  color: #fff200;
+}
+
+.darklist li:nth-child(even) {
+  background-color: #0f0f0f;
+}
+.darklist li:hover {
+  background-color: #fff200;
+  color: black;
+}
+
+.maindark {
+  color: #eee;
+}

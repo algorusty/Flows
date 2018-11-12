@@ -1,11 +1,3 @@
-.dark1 {}
-
-.dark2 {}
-
-.darkbtn {}
-
-.darklist {
-}
 
 body {
   overflow         : hidden;
@@ -59,6 +51,8 @@ ol li {
 
 .nava {
   display               : grid;
+  width                 : 100%;
+  max-width             : 100%;
   height                : 100%;
   min-height            : 40px;
   max-height            : 50px;
@@ -67,25 +61,22 @@ ol li {
   padding-left          : 0px;
   background-color      : #ddd;
   grid-area             : navi;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: 50px;
+  grid-template-columns : auto auto;
+  grid-template-rows    : 50px;
 }
 
-.nava > * {
-  flex : .1 1 170px;
-}
-
-.nava > .togglercont {
-  flex: 0 0 1fr;
-  justify-content: flex-end;
-}
+/**
+ * .nava .dropdown { flex :; }
+ *
+ * .nava > .togglercont { flex:; justify-content: flex-end; }
+ */
 
 .dropdown {
-  display : block;
-  margin  : 0;
-  padding : 0;
-  min-width: 125px;
-  max-width: 240px;
+  display   : flex;
+  min-width : 250px;
+  max-width : 500px;
+  margin    : 0;
+  padding   : 0;
 }
 
 .dropbtn {
@@ -121,15 +112,15 @@ option {
 }
 
 .togglercont {
-  display: float;
-  float: right;
-  width: 100%;
+  display : float;
+  width   : 100%;
+  float   : right;
 }
 
 .toggler {
-  background-color: #bbb;
-  width: auto;
-  float: right;
+  width            : auto;
+  float            : right;
+  background-color : #bbb;
 }
 
 .sidebar {
@@ -191,7 +182,7 @@ article {
   display       : block;
   padding-right : 1vw;
   padding-left  : 1vw;
-  color         :;
+  color         : ;
 }
 
 section {
@@ -210,3 +201,19 @@ section {
   grid-template-areas   : "logo navi navi"
                           "list article section";
 }
+
+/* >>>Dark Mode<<< */
+
+.dark1 {
+  background-color: #222;
+}
+
+.dark2 {
+  background-color: black;
+}
+
+.darkbtn {
+  color: #fff200;
+}
+
+.darklist {}

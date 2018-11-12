@@ -85,8 +85,10 @@ $(document).ready(function(){
   $("#topicbtn").on('change', sideLoad);
 });
 //dark Mode
-$(function(){
-  $('#darkMode').on('click', function(){
-    $('#')
+$(document).ready(function(){
+  $('#darkMode').click(function(){
+    $('#bod').toggleClass('dark1');
+    $('.logo, .nava, .dropbtn').toggleClass('dark2');
+    $('.dropbtn').toggleClass('darkbtn')
   });
 });

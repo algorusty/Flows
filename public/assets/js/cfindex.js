@@ -59,7 +59,11 @@ var mainLoad = function(){
 $('.sidebar').on('click', 'li', function(){
   var liText = $(this).text().replace(/ +/g, "-");
   var liIndex = './assets/content/maincont.html #' + liText;
-  $('#mainContent').load(liIndex);
+  $('#mainContent').fadeOut(33.33, function() {
+    $('#mainContent').load(liIndex, function(){
+      $('#mainContent').fadeIn(85);
+    });
+  });
 });
 };
 
@@ -79,4 +83,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   //load sidebar on topic option change
   $("#topicbtn").on('change', sideLoad);
+});
+//dark Mode
+$(function(){
+  $('#darkMode').on('click', function(){
+    $('#')
+  });
 });

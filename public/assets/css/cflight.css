@@ -1,0 +1,212 @@
+.dark1 {}
+
+.dark2 {}
+
+.darkbtn {}
+
+.darklist {
+}
+
+body {
+  overflow         : hidden;
+  background-color : #fff;
+}
+
+body ::-webkit-scrollbar-track {
+  border-radius      : 1px;
+  background-color   : #F5F5F5;
+  -webkit-box-shadow : inset 0 0 10px rgba(0,0,0,0.1);
+}
+
+body ::-webkit-scrollbar {
+  width            : 6px;
+  background-color : #F5F5F5;
+  transform        : rotateX(180deg);
+}
+
+body ::-webkit-scrollbar-thumb {
+  border-radius      : 1px;
+  background-color   : #ccc;
+  -webkit-box-shadow : inset 0 0 20px rgba(0,0,0,.1);
+}
+
+ol li {
+  padding : 4px;
+}
+
+.logo {
+  display          : block;
+  width            : 100%;
+  min-width        : 125px;
+  max-width        : 150px;
+  height           : 100%;
+  min-height       : 20px;
+  max-height       : 50px;
+  margin           : 0px;
+  padding          : 0px;
+  background-color : #ddd;
+  grid-area        : logo;
+}
+
+.logo img {
+  display    : block;
+  max-width  : 100%;
+  max-height : 34px;
+  margin     : auto;
+  padding    : 8px;
+  filter     : brightness(0);
+}
+
+.nava {
+  display               : grid;
+  height                : 100%;
+  min-height            : 40px;
+  max-height            : 50px;
+  margin                : 0px;
+  padding-right         : 0px;
+  padding-left          : 0px;
+  background-color      : #ddd;
+  grid-area             : navi;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 50px;
+}
+
+.nava > * {
+  flex : .1 1 170px;
+}
+
+.nava > .togglercont {
+  flex: 0 0 1fr;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  display : block;
+  margin  : 0;
+  padding : 0;
+  min-width: 125px;
+  max-width: 240px;
+}
+
+.dropbtn {
+  display          : block;
+  width            : 100%;
+  height           : 100%;
+  padding          : 10px;
+  color            : black;
+  border           : none;
+  background-color : #ddd;
+  text-align       : left;
+  text-decoration  : none;
+  font-size        : 100%;
+  transition       : 0.1s;
+  cursor           : pointer;
+}
+
+.dropbtn:focus,
+.dropbtn:hover {
+  color            : black;
+  background-color : #eee;
+}
+
+option {
+  display : block;
+  width   : 100%;
+  padding : 10px;
+}
+
+.dropbutton {
+  width  : 100%;
+  height : 100%;
+}
+
+.togglercont {
+  display: float;
+  float: right;
+  width: 100%;
+}
+
+.toggler {
+  background-color: #bbb;
+  width: auto;
+  float: right;
+}
+
+.sidebar {
+  display        : block;
+  width          : 100%;
+  min-width      : 125px;
+  max-width      : 150px;
+  padding        : 0px;
+  color          : black;
+  overflow-y     : scroll;
+  background     : #dadada;
+  align-items    : flex-start;
+  flex-direction : column;
+  grid-area      : list;
+}
+
+.sidebar p {
+  margin    : 0px;
+  padding   : 10px;
+  font-size : 1.1em;
+}
+
+.sidelist {
+  display        : flex;
+  margin         : 0px;
+  padding        : 0px;
+  padding-bottom : 0px;
+  background     : #eee;
+  flex-direction : column;
+}
+
+.sidelist li {
+  display    : block;
+  margin     : 0px;
+  padding    : 10px;
+  color      : black;
+  text-align : right;
+  font-size  : .875em;
+  flex-wrap  : wrap;
+  transition : 0.1s;
+  cursor     : pointer;
+}
+
+.sidelist li:nth-child(even) {
+  background-color : #ddd;
+}
+
+.sidelist li:hover {
+  background : #ccc;
+}
+
+article {
+  display    : block;
+  overflow-y : scroll;
+  grid-area  : article;
+}
+
+.mainContent {
+  display       : block;
+  padding-right : 1vw;
+  padding-left  : 1vw;
+  color         :;
+}
+
+section {
+  display    : block;
+  overflow-y : scroll;
+  grid-area  : section;
+}
+
+.grid-container {
+  display               : grid;
+  margin                : 0px;
+  font-family           : Roboto,
+                          sans-serif;
+  grid-template-columns : auto 1fr 1fr;
+  grid-template-rows    : auto 1fr;
+  grid-template-areas   : "logo navi navi"
+                          "list article section";
+}

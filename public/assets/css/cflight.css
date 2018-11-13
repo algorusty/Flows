@@ -187,20 +187,20 @@ section {
 /* >>>Dark Mode<<< */
 
 .logodark img {
-  filter: brightness(1);
+  filter: brightness(.9);
 }
 
 .dark1 {
-  background-color: #222;
+  background-color: #1c1c1c;
 }
 
 .dark2 {
-  background-color: black;
-  color: #fff200;
+  background-color: #111;
+  color: #eee200;
 }
 
 .darkbtn {
-  color: #fff200;
+  color: #eee200;
 }
 
 .darkbtn:hover,
@@ -210,12 +210,12 @@ section {
 }
 
 .darklist li {
-  background-color: #070707;
-  color: #fff200;
+  background-color: #292929;
+  color: #bbb;
 }
 
 .darklist li:nth-child(even) {
-  background-color: #0f0f0f;
+  background-color: #333;
 }
 .darklist li:hover {
   background-color: #fff200;
@@ -223,5 +223,8 @@ section {
 }
 
 .maindark {
-  color: #eee;
+  color: #fff;
+}
+.darkgradient {
+  background: linear-gradient(0deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,0.0) 100%);
 }

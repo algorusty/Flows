@@ -72,7 +72,7 @@ ol li {
   text-align       : left;
   text-decoration  : none;
   font-size        : 100%;
-  transition       : 0.1s;
+  transition       : 0.15s;
   cursor           : pointer;
 }
 
@@ -102,7 +102,7 @@ option {
 .toggler {
   width            : auto;
   float            : right;
-  background-color : #bbb;
+  background-color : #ddd;
 }
 
 .sidebar {
@@ -113,7 +113,7 @@ option {
   padding        : 0px;
   color          : black;
   overflow-y     : scroll;
-  background     : #dadada;
+  background     : #ddd;
   align-items    : flex-start;
   flex-direction : column;
   grid-area      : list;
@@ -142,7 +142,7 @@ option {
   text-align : right;
   font-size  : .875em;
   flex-wrap  : wrap;
-  transition : 0.1s;
+  transition : 0.15s;
   cursor     : pointer;
 }
 

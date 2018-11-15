@@ -68,6 +68,10 @@ $('.sidebar').on('click', 'li', function(){
 };
 
 //Calls:
+$(function(){
+  alert('Please use Chrome or Firefox')
+});
+
 $(mainLoad);
 
 $(document).ready(function(){

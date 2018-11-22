@@ -68,10 +68,11 @@ $('.sidebar').on('click', 'li', function(){
 };
 
 //Calls:
+/*
 $(function(){
   alert('Please use Chrome or Firefox')
 });
-
+*/
 $(mainLoad);
 
 $(document).ready(function(){
@@ -99,25 +100,25 @@ const scrollD = $('<style id="customScroll">::-webkit-scrollbar-track{border-rad
 $('html > head').append(scrollD);
 
 const darkModeOn = function(){
-    $('#bod').addClass('dark1');
-    $('.logo, .nava, .dropbtn, .sidebar').addClass('dark2');
-    $('.dropbtn, .sidebar').addClass('darkgradient')
-    $('.dropbtn').addClass('darkbtn');
-    $('.logo').addClass('logodark');
-    $('.sidelist').addClass('darklist');
-    $('.mainContent').addClass('maindark');
-    $('#customScroll').replaceWith(scrollD);
+    $('#bod').addClass('dark1', 200);
+    $('.logo, .nava, .dropbtn, .sidebar').addClass('dark2', 200);
+    $('.dropbtn, .sidebar').addClass('darkgradient', 200)
+    $('.dropbtn').addClass('darkbtn', 200);
+    $('.logo').addClass('logodark', 200);
+    $('.sidelist').addClass('darklist', 200);
+    $('.mainContent').addClass('maindark', 200);
+    $('#customScroll').replaceWith(scrollD, 200);
 };
 
 const darkModeOff = function(){
-    $('#bod').removeClass('dark1');
-    $('.logo, .nava, .dropbtn, .sidebar').removeClass('dark2');
-    $('.dropbtn, .sidebar').removeClass('darkgradient')
-    $('.dropbtn').removeClass('darkbtn');
-    $('.logo').removeClass('logodark');
-    $('.sidelist').removeClass('darklist')
-    $('.mainContent').removeClass('maindark')
-    $('#customScroll').replaceWith(scrollL);
+    $('#bod').removeClass('dark1', 200);
+    $('.logo, .nava, .dropbtn, .sidebar').removeClass('dark2', 200);
+    $('.dropbtn, .sidebar').removeClass('darkgradient', 200)
+    $('.dropbtn').removeClass('darkbtn', 200);
+    $('.logo').removeClass('logodark', 200);
+    $('.sidelist').removeClass('darklist', 200)
+    $('.mainContent').removeClass('maindark', 200)
+    $('#customScroll').replaceWith(scrollL, 200);
 };
 
 $(document).ready(function(){
@@ -125,7 +126,7 @@ $(document).ready(function(){
       if (toggled === false) {
       toggled = true;
       darkModeOn();
-    } else if (toggled === true) {
+    } else {
       toggled = false;
       darkModeOff();
     }

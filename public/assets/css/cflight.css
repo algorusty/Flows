@@ -4,6 +4,10 @@ body {
   background-color : #fff;
 }
 
+h1 {
+  font-family: open sans;
+}
+
 ol li {
   padding : 4px;
 }
@@ -16,19 +20,18 @@ ol li {
   height           : 100%;
   min-height       : 20px;
   max-height       : 50px;
-  margin           : 0px;
+  margin           : auto;
   padding          : 0px;
   background-color : #ddd;
-  grid-area        : logo;
 }
 
-.logo img {
-  display    : block;
+.logo h1 {
+  display: float;
   max-width  : 100%;
-  max-height : 34px;
-  margin     : auto;
-  padding    : 8px;
-  filter     : brightness(0);
+  max-height : 100%;
+  text-align: center;
+  margin: auto;
+  color: black;
 }
 
 .nava {
@@ -186,8 +189,8 @@ section {
 
 /* >>>Dark Mode<<< */
 
-.logodark img {
-  filter: brightness(.9);
+.logodark h1 {
+  color: #eee;
 }
 
 .dark1 {
@@ -196,16 +199,16 @@ section {
 
 .dark2 {
   background-color: #111;
-  color: #eee200;
+  color: #eee;
 }
 
 .darkbtn {
-  color: #eee200;
+  color: #eee;
 }
 
 .darkbtn:hover,
 .darkbtn:focus {
-  background-color: #fff200;
+  background-color: #eee;
   color: black;
 }
 
@@ -218,8 +221,9 @@ section {
   background-color: #333;
 }
 .darklist li:hover {
-  background-color: #fff200;
+  background-color: #eee;
   color: black;
+  transition-property: initial;
 }
 
 .maindark {

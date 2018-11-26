@@ -1,65 +1,61 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38758656-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38758656-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'UA-38758656-3');
   </script>
-    <meta charset="utf-8">
-    <title>CF PROTO</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Wesley Soto">
-    <link rel="stylesheet" type="text/css" href="assets/css/cflight.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
-  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
-  crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <title>Flows</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Wesley Soto">
+  <link rel="stylesheet" type="text/css" href="assets/css/cflight.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous"></script>
 
-  </head>
+</head>
 
-  <body id='bod' class="grid-container">
-    <script src="./assets/js/cfindex.js"></script>
-    <div class="logo">
-      <img id='logoimg' src="assets/img/here-1.svg" type="image/svg" />
+<body id='bod' class="grid-container">
+  <script src="./assets/js/cfindex.js"></script>
+  <div class="logo">
+    <h1>Flows</h1>
+  </div>
+  <nav class="nava">
+    <div class="dropdown">
+      <select id="servicebtn" class="dropbtn">
+      </select>
+      <div id="topicbtn" class='dropbutton'>
+      </div>
     </div>
-    <nav class="nava">
-      <div class="dropdown">
-        <select id="servicebtn" class="dropbtn">
-        </select>
-        <div id="topicbtn" class='dropbutton'>
-        </div>
-      </div>
-      <div class="togglercont">
-        <button id="darkMode" class="toggler dropbtn">
-          Dark Mode
-        </button>
-      </div>
-    </nav>
-    <nav id='side' class="sidebar">
-      <div id="sidefade">
-      </div>
-    </nav>
-    <article>
-      <div id="mainContent" class="mainContent">
+    <div class="togglercont">
+      <button id="darkMode" class="toggler dropbtn">
+        Dark Mode
+      </button>
+    </div>
+  </nav>
+  <nav id='side' class="sidebar">
+    <div id="sidefade">
+    </div>
+  </nav>
+  <article>
+    <div id="mainContent" class="mainContent">
 
-      </div>
-    </article>
-    <section id="secondContent">
-      <embed src="./assets/pdf/p14.pdf" type="application/pdf" width="100%" height="100%" alt="test">
-    </section>
+    </div>
+  </article>
+  <section id="secondContent">
+    <embed src="./assets/pdf/p14.pdf" type="application/pdf" width="100%" height="100%" alt="test">
+  </section>
 
-  </body>
+</body>
 
 </html>

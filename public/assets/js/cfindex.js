@@ -100,25 +100,25 @@ const scrollD = $('<style id="customScroll">::-webkit-scrollbar-track{border-rad
 $('html > head').append(scrollD);
 
 const darkModeOn = function(){
-    $('#bod').addClass('dark1', 200);
-    $('.logo, .nava, .dropbtn, .sidebar').addClass('dark2', 200);
-    $('.dropbtn, .sidebar').addClass('darkgradient', 200)
-    $('.dropbtn').addClass('darkbtn', 200);
-    $('.logo').addClass('logodark', 200);
-    $('.sidelist').addClass('darklist', 200);
-    $('.mainContent').addClass('maindark', 200);
-    $('#customScroll').replaceWith(scrollD, 200);
+    $('#bod').addClass('dark1', 100);
+    $('.logo, .nava, .dropbtn, .sidebar').addClass('dark2', 100);
+    $('.dropbtn, .sidebar').addClass('darkgradient', 100)
+    $('.dropbtn').addClass('darkbtn', 100);
+    $('.logo').addClass('logodark', 100);
+    $('.sidelist').addClass('darklist', 100);
+    $('.mainContent').addClass('maindark', 100);
+    $('#customScroll').replaceWith(scrollD, 100);
 };
 
 const darkModeOff = function(){
-    $('#bod').removeClass('dark1', 200);
-    $('.logo, .nava, .dropbtn, .sidebar').removeClass('dark2', 200);
-    $('.dropbtn, .sidebar').removeClass('darkgradient', 200)
-    $('.dropbtn').removeClass('darkbtn', 200);
-    $('.logo').removeClass('logodark', 200);
-    $('.sidelist').removeClass('darklist', 200)
-    $('.mainContent').removeClass('maindark', 200)
-    $('#customScroll').replaceWith(scrollL, 200);
+    $('#bod').removeClass('dark1', 100);
+    $('.logo, .nava, .dropbtn, .sidebar').removeClass('dark2', 100);
+    $('.dropbtn, .sidebar').removeClass('darkgradient', 100)
+    $('.dropbtn').removeClass('darkbtn', 100);
+    $('.logo').removeClass('logodark', 100);
+    $('.sidelist').removeClass('darklist', 100)
+    $('.mainContent').removeClass('maindark', 100)
+    $('#customScroll').replaceWith(scrollL, 100);
 };
 
 $(document).ready(function(){

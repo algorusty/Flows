@@ -1,35 +1,28 @@
 {
-  "name": "cf-app",
-  "description": "CF prototype",
-  "version": "0.0.1",
+  "name": "ws-portfolio",
+  "description": "Wesley's Portfolio Page",
+  "version": "0.1.1",
   "private": true,
   "devDependencies": {
     "mocha": "5.0.0"
   },
   "scripts": {
-    "test": "mocha --recursive tests"
+    "start": "index.js"
   },
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "public": "public",
+    "portfolio": "portfolio"
   },
   "dependencies": {
-    "connect": "^3.6.6",
-    "connect-logger": "0.0.1",
     "express": "^4.16.4",
     "express-rate-limit": "^3.3.2",
     "greenlock": "^2.4.10",
     "greenlock-express": "^2.4.9",
-    "http-server": "^0.11.1",
-    "lodash": "^4.17.11",
-    "logger": "0.0.1",
-    "mime": "^2.3.1",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.6",
     "npm": "^6.4.1",
-    "quill": "^1.3.6",
-    "rate-limit": "^0.1.1",
-    "winston": "^3.1.0"
+    "quill": "^1.3.6"
   },
   "repository": {
     "type": "git",

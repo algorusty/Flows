@@ -18,6 +18,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-rate-limit": "^3.3.2",
+    "fullpage.js": "^3.0.4",
     "greenlock": "^2.4.10",
     "greenlock-express": "^2.4.9",
     "mongodb": "^3.1.10",

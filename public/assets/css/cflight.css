@@ -208,7 +208,7 @@ section {
 
 .darkbtn:hover,
 .darkbtn:focus {
-  background-color: #eee;
+  background-color: #26c6da;
   color: black;
 }
 
@@ -221,7 +221,7 @@ section {
   background-color: #333;
 }
 .darklist li:hover {
-  background-color: #eee;
+  background-color: #26c6da;
   color: black;
   transition-property: initial;
 }

@@ -8,6 +8,44 @@
  *
  * Copyright (C) 2018 http://alvarotrigo.com/fullPage - A project by Alvaro Trigo
  */
+
+/* setting backgrounds
+*/
+#section1 {
+  background-image: url(https://media.giphy.com/media/l2Sqf1fbj1qrmaJ6E/giphy.gif);
+  padding: 0;
+}
+
+#section2 {
+  background-image: url(https://media.giphy.com/media/3o85xGsEiThrJ1I7PW/giphy.gif);
+  color: white;
+}
+
+#section1,
+#section2,
+#section3{
+    background-size: cover;
+    background-position: center;
+
+}
+.section {
+  text-align:center;
+  text-justify: center;
+}
+
+.section a{
+  background-color: #00000000;
+  padding: .25%;
+  height: 100%;
+  border-radius: 8%;
+  font-family: Roboto;
+  font-size: 5vh;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px 10px #00000000;
+  text-shadow: 0px 2px 6px #11171a50;
+  color: inherit;
+}
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;

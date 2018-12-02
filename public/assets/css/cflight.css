@@ -4,10 +4,6 @@ body {
   background-color : #fff;
 }
 
-h1 {
-  font-family: open sans;
-}
-
 ol li {
   padding : 4px;
 }
@@ -26,12 +22,15 @@ ol li {
 }
 
 .logo h1 {
-  display: float;
+  display: block;
+  width: 100%;
   max-width  : 100%;
-  max-height : 100%;
+  height: 50px;
+  max-height : 50px;
   text-align: center;
   margin: auto;
   color: black;
+  font-family: open sans;
 }
 
 .nava {
@@ -190,7 +189,7 @@ section {
 /* >>>Dark Mode<<< */
 
 .logodark h1 {
-  color: #eee;
+  color: #fff200;
 }
 
 .dark1 {
@@ -208,7 +207,7 @@ section {
 
 .darkbtn:hover,
 .darkbtn:focus {
-  background-color: #26c6da;
+  background-color: #fff200;
   color: black;
 }
 
@@ -221,7 +220,7 @@ section {
   background-color: #333;
 }
 .darklist li:hover {
-  background-color: #26c6da;
+  background-color: #fff200;
   color: black;
   transition-property: initial;
 }

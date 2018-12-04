@@ -177,7 +177,7 @@ section {
 
 .grid-container {
   display               : grid;
-  margin                : 0px;
+  margin               : 0px;
   font-family           : Roboto,
                           sans-serif;
   grid-template-columns : auto 1fr 1fr;
@@ -189,7 +189,7 @@ section {
 /* >>>Dark Mode<<< */
 
 .logodark h1 {
-  color: #fff200;
+  color: white;
 }
 
 .dark1 {
